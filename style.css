@@ -1,0 +1,117 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: 'Arial', sans-serif;
+    text-align: center;
+    background: linear-gradient(135deg, #f9fafc, #e3eaf4);
+    color: #333;
+}
+
+header {
+    margin-top: 20px;
+}
+
+.logo {
+    width: 120px;
+    animation: fadeInDown 1s ease-in-out;
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-top: 20px;
+    animation: fadeInUp 1s ease-in-out;
+}
+
+h2 {
+    font-size: 1.5rem;
+    margin-top: 10px;
+    color: #555;
+    animation: fadeInUp 1.2s ease-in-out;
+}
+
+.earnings {
+    font-size: 1.2rem;
+    margin-top: 20px;
+    font-weight: bold;
+    animation: fadeInUp 1.4s ease-in-out;
+}
+
+.description {
+    margin: 20px auto;
+    max-width: 80%;
+    font-size: 1rem;
+    color: #666;
+    animation: fadeInUp 1.6s ease-in-out;
+}
+
+.cta-button {
+    display: inline-block;
+    margin-top: 30px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background: #6c63ff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    animation: bounceIn 2s ease-in-out;
+}
+
+.cta-button:hover {
+    background: #554dbd;
+    transition: background 0.3s;
+}
+
+footer {
+    margin-top: 50px;
+    font-size: 0.8rem;
+    color: #999;
+}
+
+/* Animations */
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes bounceIn {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-10px);
+    }
+    60% {
+        transform: translateY(-5px);
+    }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 2rem;
+    }
+    h2 {
+        font-size: 1.2rem;
+    }
+    .earnings, .description {
+        font-size: 0.9rem;
+    }
+  }
